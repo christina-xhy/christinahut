@@ -1,0 +1,130 @@
+*{ box-sizing:border-box;}
+*{margin:0;padding:0;}
+*:before,*:after{ box-sizing: border-box;}
+ul,ol{ list-style:none;}
+a{color:inherit;text-decoration:none;}
+img{
+    max-width:100%;max-height:100%;
+}
+
+body{
+    background:#eee;
+}
+.bodyContainer{
+    width:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:#ddd;
+}
+ul,li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+.tableContainer{
+   flex-wrap:wrap;
+    display:flex;
+    justify-content: flex-start;
+    margin-right:-50px;
+}
+
+.tableContainer > li {
+    margin-bottom:10px;
+    margin-right:25px;
+    background: white;
+    width:80px;
+    height:80px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: ;
+    border-radius:50%;
+    padding:20px 0;
+
+}
+.tableContainer  .firstSecond{
+    width:80px;
+    height:80px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    border-radius:50%;
+    padding:20px 0;
+    position:relative;
+    cursor:pointer; 
+
+} 
+.tableContainer .firstSecond  .close{
+    position: absolute;
+    right:10px;
+    top:5px;
+    display:none;
+    cursor:default;
+}
+.tableContainer .firstSecond:hover > .close{
+    display: block;
+}
+
+.tableContainer .firstSecond .logo{
+display:flex;
+justify-content: center;
+align-items: center;
+width:64px;
+height:25px;
+}
+.tableContainer.firstSecond.link{
+    font-size: 10px;
+    margin-top: 4px;
+}
+ .tableContainer > .last {
+    width:80px;
+    height:80px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    border-radius:50%;
+    padding:20px 0;
+ }
+ .addButton{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .addButton > .icon{
+    width:64px;
+    height:25px; 
+ }
+ .addButton > .text{
+    font-size: 10px;
+    margin-top: 4px;
+ }
+  
+.input{   
+position:relative;
+}
+
+#searchInput{
+    width: 350px;
+    height:40px;
+    padding: 10px 60px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    display:block;
+    justify-content: center;
+}
+
+.icon-wrapper{
+    position:absolute;
+    left:10px;
+    top:35px;
+    display:block;
+    cursor:default;
+}
